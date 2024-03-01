@@ -1,0 +1,597 @@
+{
+  "coverage": "16.14%",
+  "expectCount": 477,
+  "actualCount": 77,
+  "files": {
+    "lib/chain/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        11
+      ]
+    },
+    "lib/chain/src/AccountLogin.js": {
+      "expectCount": 13,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        15,
+        18,
+        22,
+        26,
+        56,
+        83,
+        106
+      ]
+    },
+    "lib/chain/src/ChainStore.js": {
+      "expectCount": 84,
+      "actualCount": 23,
+      "undocumentLines": [
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        22,
+        23,
+        25,
+        27,
+        1758,
+        1799,
+        1814,
+        51,
+        54,
+        59,
+        60,
+        72,
+        73,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        93,
+        96,
+        98,
+        100,
+        106,
+        110,
+        208,
+        213,
+        219,
+        224,
+        338,
+        342,
+        1126,
+        1137,
+        1579,
+        1624,
+        1630,
+        1634,
+        1645,
+        1672,
+        1727,
+        1824
+      ]
+    },
+    "lib/chain/src/ChainTypes.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "lib/chain/src/ChainValidation.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/chain/src/EmitterInstance.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "lib/chain/src/NumberUtils.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "lib/chain/src/ObjectId.js": {
+      "expectCount": 12,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        19,
+        40,
+        47,
+        51,
+        57,
+        61
+      ]
+    },
+    "lib/chain/src/TransactionBuilder.js": {
+      "expectCount": 34,
+      "actualCount": 7,
+      "undocumentLines": [
+        6,
+        781,
+        793,
+        839,
+        843,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        32,
+        133,
+        197,
+        290,
+        315,
+        341,
+        689,
+        703,
+        718,
+        735,
+        758,
+        762,
+        766,
+        770
+      ]
+    },
+    "lib/chain/src/TransactionHelper.js": {
+      "expectCount": 9,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        30,
+        43,
+        63,
+        67,
+        88,
+        99,
+        1
+      ]
+    },
+    "lib/chain/src/state.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        7
+      ]
+    },
+    "lib/ecc/src/BrainKey.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "lib/ecc/src/KeyUtils.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        9,
+        12,
+        14
+      ]
+    },
+    "lib/ecc/src/PrivateKey.js": {
+      "expectCount": 19,
+      "actualCount": 6,
+      "undocumentLines": [
+        9,
+        10,
+        11,
+        177,
+        13,
+        19,
+        22,
+        70,
+        88,
+        95,
+        155,
+        164,
+        168
+      ]
+    },
+    "lib/ecc/src/PublicKey.js": {
+      "expectCount": 23,
+      "actualCount": 6,
+      "undocumentLines": [
+        3,
+        9,
+        10,
+        12,
+        15,
+        18,
+        22,
+        31,
+        40,
+        44,
+        122,
+        131,
+        144,
+        169,
+        178,
+        182,
+        186
+      ]
+    },
+    "lib/ecc/src/address.js": {
+      "expectCount": 9,
+      "actualCount": 2,
+      "undocumentLines": [
+        6,
+        11,
+        12,
+        15,
+        21,
+        54,
+        58
+      ]
+    },
+    "lib/ecc/src/aes.js": {
+      "expectCount": 18,
+      "actualCount": 16,
+      "undocumentLines": [
+        7,
+        44
+      ]
+    },
+    "lib/ecc/src/ecdsa.js": {
+      "expectCount": 7,
+      "actualCount": 2,
+      "undocumentLines": [
+        7,
+        10,
+        64,
+        140,
+        105
+      ]
+    },
+    "lib/ecc/src/ecsignature.js": {
+      "expectCount": 8,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        15,
+        36,
+        77,
+        90,
+        103,
+        123,
+        6
+      ]
+    },
+    "lib/ecc/src/enforce_types.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        39
+      ]
+    },
+    "lib/ecc/src/hash.js": {
+      "expectCount": 5,
+      "actualCount": 3,
+      "undocumentLines": [
+        28,
+        32
+      ]
+    },
+    "lib/ecc/src/signature.js": {
+      "expectCount": 21,
+      "actualCount": 4,
+      "undocumentLines": [
+        4,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        20,
+        30,
+        39,
+        103,
+        117,
+        136,
+        146,
+        150,
+        154,
+        160
+      ]
+    },
+    "lib/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        34
+      ]
+    },
+    "lib/serializer/src/FastParser.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4,
+        5,
+        22,
+        36,
+        48
+      ]
+    },
+    "lib/serializer/src/SerializerValidation.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "lib/serializer/src/convert.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4,
+        39
+      ]
+    },
+    "lib/serializer/src/error_with_cause.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        3,
+        4,
+        22,
+        25
+      ]
+    },
+    "lib/serializer/src/operations.js": {
+      "expectCount": 146,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        51,
+        61,
+        69,
+        74,
+        79,
+        84,
+        88,
+        97,
+        105,
+        110,
+        118,
+        123,
+        133,
+        141,
+        146,
+        151,
+        159,
+        164,
+        169,
+        174,
+        179,
+        184,
+        189,
+        194,
+        202,
+        210,
+        215,
+        220,
+        225,
+        231,
+        236,
+        241,
+        246,
+        252,
+        257,
+        262,
+        267,
+        275,
+        280,
+        284,
+        292,
+        300,
+        308,
+        313,
+        317,
+        322,
+        326,
+        333,
+        337,
+        344,
+        351,
+        360,
+        368,
+        373,
+        381,
+        386,
+        443,
+        448,
+        450,
+        455,
+        457,
+        467,
+        477,
+        485,
+        494,
+        501,
+        510,
+        520,
+        527,
+        540,
+        548,
+        555,
+        564,
+        576,
+        585,
+        593,
+        600,
+        607,
+        612,
+        640,
+        675,
+        686,
+        695,
+        703,
+        714,
+        723,
+        730,
+        738,
+        745,
+        753,
+        760,
+        768,
+        775,
+        783,
+        785,
+        794,
+        807,
+        815,
+        828,
+        842,
+        854,
+        864,
+        873,
+        883,
+        915,
+        923,
+        932,
+        940,
+        945,
+        953,
+        963,
+        967,
+        972,
+        976,
+        982,
+        993,
+        1001,
+        1009,
+        1017,
+        1021,
+        1027,
+        1035,
+        1043,
+        1053,
+        1059,
+        1066,
+        1074,
+        1079,
+        1085,
+        1093,
+        1101,
+        1113,
+        1120,
+        1128,
+        1135,
+        1143,
+        1151,
+        1162,
+        1170,
+        1178,
+        1186,
+        1249,
+        1257,
+        1271,
+        46
+      ]
+    },
+    "lib/serializer/src/precision.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "lib/serializer/src/serializer.js": {
+      "expectCount": 17,
+      "actualCount": 2,
+      "undocumentLines": [
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        59,
+        89,
+        184,
+        189,
+        197,
+        203,
+        212
+      ]
+    },
+    "lib/serializer/src/template.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "lib/serializer/src/types.js": {
+      "expectCount": 18,
+      "actualCount": 0,
+      "undocumentLines": [
+        13,
+        17,
+        85,
+        86,
+        210,
+        290,
+        385,
+        471,
+        528,
+        575,
+        661,
+        707,
+        811,
+        855,
+        1014,
+        1015,
+        1016,
+        15
+      ]
+    }
+  }
+}

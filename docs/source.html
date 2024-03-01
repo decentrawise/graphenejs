@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href>
+  <title data-ice="title">Source | GrapheneJS Docs</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Pure JavaScript Graphene Protocol library for node.js and browsers."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="GrapheneJS Docs"><meta property="twitter:description" content="Pure JavaScript Graphene Protocol library for node.js and browsers."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/decentrawise/graphenejs"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#chain-src">chain/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/chain/src/AccountLogin.js~AccountLogin.html">AccountLogin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/chain/src/ChainStore.js~ChainStore.html">ChainStore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/chain/src/ObjectId.js~ObjectId.html">ObjectId</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/chain/src/TransactionBuilder.js~TransactionBuilder.html">TransactionBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-emitter">emitter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get">get</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-set">set</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-accountLogin">accountLogin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-chain_store">chain_store</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ChainTypes">ChainTypes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-chainValidation">chainValidation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-NumberUtils">NumberUtils</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-helper">helper</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ecc-src">ecc/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/ecc/src/PrivateKey.js~PrivateKey.html">PrivateKey</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/ecc/src/PublicKey.js~PublicKey.html">PublicKey</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/ecc/src/address.js~Address.html">Address</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/ecc/src/aes.js~Aes.html">Aes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/ecc/src/signature.js~Signature.html">Signature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalize">normalize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-calcPubKeyRecoveryParam">calcPubKeyRecoveryParam</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deterministicGenerateK">deterministicGenerateK</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-recoverPubKey">recoverPubKey</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sign">sign</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-verify">verify</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-verifyRaw">verifyRaw</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ECSignature">ECSignature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-enforce">enforce</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-HmacSHA256">HmacSHA256</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ripemd160">ripemd160</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sha1">sha1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sha256">sha256</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sha512">sha512</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-key">key</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#serializer-src">serializer/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/serializer/src/FastParser.js~FastParser.html">FastParser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/serializer/src/error_with_cause.js~ErrorWithCause.html">ErrorWithCause</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/serializer/src/serializer.js~Serializer.html">Serializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-convert">convert</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-template">template</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_my">_my</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_create">account_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_create_operation_fee_parameters">account_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_name_eq_lit_predicate">account_name_eq_lit_predicate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_options">account_options</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_transfer">account_transfer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_transfer_operation_fee_parameters">account_transfer_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_update">account_update</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_update_operation_fee_parameters">account_update_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_upgrade">account_upgrade</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_upgrade_operation_fee_parameters">account_upgrade_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_whitelist">account_whitelist</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account_whitelist_operation_fee_parameters">account_whitelist_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-assert">assert</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-assert_operation_fee_parameters">assert_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset">asset</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_claim_fees">asset_claim_fees</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_claim_fees_operation_fee_parameters">asset_claim_fees_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_claim_pool">asset_claim_pool</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_claim_pool_operation_fee_parameters">asset_claim_pool_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_create">asset_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_create_operation_fee_parameters">asset_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_fund_fee_pool">asset_fund_fee_pool</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_fund_fee_pool_operation_fee_parameters">asset_fund_fee_pool_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_global_settle">asset_global_settle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_global_settle_operation_fee_parameters">asset_global_settle_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_issue">asset_issue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_issue_operation_fee_parameters">asset_issue_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_options">asset_options</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_publish_feed">asset_publish_feed</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_publish_feed_operation_fee_parameters">asset_publish_feed_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_reserve">asset_reserve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_reserve_operation_fee_parameters">asset_reserve_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_settle">asset_settle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_settle_cancel">asset_settle_cancel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_settle_cancel_operation_fee_parameters">asset_settle_cancel_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_settle_operation_fee_parameters">asset_settle_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_symbol_eq_lit_predicate">asset_symbol_eq_lit_predicate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_update">asset_update</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_update_bitasset">asset_update_bitasset</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_update_bitasset_operation_fee_parameters">asset_update_bitasset_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_update_feed_producers">asset_update_feed_producers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_update_feed_producers_operation_fee_parameters">asset_update_feed_producers_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_update_issuer">asset_update_issuer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_update_issuer_operation_fee_parameters">asset_update_issuer_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-asset_update_operation_fee_parameters">asset_update_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-authority">authority</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-balance_claim">balance_claim</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-balance_claim_operation_fee_parameters">balance_claim_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-bid_collateral">bid_collateral</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-bid_collateral_operation_fee_parameters">bid_collateral_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-bitasset_options">bitasset_options</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-blind_input">blind_input</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-blind_output">blind_output</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-blind_transfer">blind_transfer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-blind_transfer_operation_fee_parameters">blind_transfer_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-block_header">block_header</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-block_id_predicate">block_id_predicate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-burn_worker_initializer">burn_worker_initializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-call_order_update">call_order_update</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-call_order_update_operation_fee_parameters">call_order_update_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-cdd_vesting_policy_initializer">cdd_vesting_policy_initializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-chain_parameters">chain_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-committee_member_create">committee_member_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-committee_member_create_operation_fee_parameters">committee_member_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-committee_member_update">committee_member_update</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-committee_member_update_global_parameters">committee_member_update_global_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-committee_member_update_global_parameters_operation_fee_parameters">committee_member_update_global_parameters_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-committee_member_update_operation_fee_parameters">committee_member_update_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-custom">custom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-custom_operation_fee_parameters">custom_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-execute_bid">execute_bid</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-execute_bid_operation_fee_parameters">execute_bid_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fba_distribute">fba_distribute</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fba_distribute_operation_fee_parameters">fba_distribute_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fee_schedule">fee_schedule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fill_order">fill_order</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fill_order_operation_fee_parameters">fill_order_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_create">htlc_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_create_operation_fee_parameters">htlc_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_extend">htlc_extend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_extend_operation_fee_parameters">htlc_extend_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_redeem">htlc_redeem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_redeem_operation_fee_parameters">htlc_redeem_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_redeemed">htlc_redeemed</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_redeemed_operation_fee_parameters">htlc_redeemed_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_refund">htlc_refund</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-htlc_refund_operation_fee_parameters">htlc_refund_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-limit_order_cancel">limit_order_cancel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-limit_order_cancel_operation_fee_parameters">limit_order_cancel_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-limit_order_create">limit_order_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-limit_order_create_operation_fee_parameters">limit_order_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-linear_vesting_policy_initializer">linear_vesting_policy_initializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-memo_data">memo_data</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-op_wrapper">op_wrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-operation">operation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-override_transfer">override_transfer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-override_transfer_operation_fee_parameters">override_transfer_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-price">price</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-price_feed">price_feed</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-processed_transaction">processed_transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-proposal_create">proposal_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-proposal_create_operation_fee_parameters">proposal_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-proposal_delete">proposal_delete</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-proposal_delete_operation_fee_parameters">proposal_delete_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-proposal_update">proposal_update</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-proposal_update_operation_fee_parameters">proposal_update_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-refund_worker_initializer">refund_worker_initializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-signed_block">signed_block</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-signed_block_header">signed_block_header</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-signed_transaction">signed_transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-stealth_confirmation">stealth_confirmation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-stealth_memo_data">stealth_memo_data</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-transaction">transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-transfer">transfer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-transfer_from_blind">transfer_from_blind</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-transfer_from_blind_operation_fee_parameters">transfer_from_blind_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-transfer_operation_fee_parameters">transfer_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-transfer_to_blind">transfer_to_blind</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-transfer_to_blind_operation_fee_parameters">transfer_to_blind_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-vesting_balance_create">vesting_balance_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-vesting_balance_create_operation_fee_parameters">vesting_balance_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-vesting_balance_withdraw">vesting_balance_withdraw</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-vesting_balance_withdraw_operation_fee_parameters">vesting_balance_withdraw_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-vesting_balance_worker_initializer">vesting_balance_worker_initializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-void_result">void_result</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-withdraw_permission_claim">withdraw_permission_claim</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-withdraw_permission_claim_operation_fee_parameters">withdraw_permission_claim_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-withdraw_permission_create">withdraw_permission_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-withdraw_permission_create_operation_fee_parameters">withdraw_permission_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-withdraw_permission_delete">withdraw_permission_delete</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-withdraw_permission_delete_operation_fee_parameters">withdraw_permission_delete_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-withdraw_permission_update">withdraw_permission_update</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-withdraw_permission_update_operation_fee_parameters">withdraw_permission_update_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-witness_create">witness_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-witness_create_operation_fee_parameters">witness_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-witness_update">witness_update</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-witness_update_operation_fee_parameters">witness_update_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-worker_create">worker_create</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-worker_create_operation_fee_parameters">worker_create_operation_fee_parameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Types">Types</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">77/477</span></h1>
+
+<table class="files-summary" data-ice="files" data-use-coverage="true">
+  <thead>
+    <tr>
+      <td>File</td>
+      <td>Identifier</td>
+      <td class="coverage">Document</td>
+      <td style="display: none;">Size</td>
+      <td style="display: none;">Lines</td>
+      <td style="display: none;">Updated</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+  <tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/browser.js.html">lib/browser.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">412 byte</td>
+      <td style="display: none;" data-ice="lines">10</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/index.js.html#errorLines=11">lib/chain/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">679 byte</td>
+      <td style="display: none;" data-ice="lines">24</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/AccountLogin.js.html#errorLines=10,106,12,13,15,18,22,26,56,6,7,83,9">lib/chain/src/AccountLogin.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/chain/src/AccountLogin.js~AccountLogin.html">AccountLogin</a></span>
+<span><a href="variable/index.html#static-variable-accountLogin">accountLogin</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/13</span></td>
+      <td style="display: none;" data-ice="size">2820 byte</td>
+      <td style="display: none;" data-ice="lines">106</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/ChainStore.js.html#errorLines=10,100,106,11,110,1126,1137,12,13,14,15,1579,16,1624,1630,1634,1645,1672,1727,1758,1799,18,1814,1824,208,213,219,22,224,23,25,27,338,342,51,54,59,60,7,72,73,74,76,77,78,79,8,80,82,83,84,85,86,87,88,89,90,91,93,96,98">lib/chain/src/ChainStore.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/chain/src/ChainStore.js~ChainStore.html">ChainStore</a></span>
+<span><a href="variable/index.html#static-variable-chain_store">chain_store</a></span></td>
+      <td class="coverage"><span data-ice="coverage">27 %</span><span data-ice="coverageCount" class="coverage-count">23/84</span></td>
+      <td style="display: none;" data-ice="size">71584 byte</td>
+      <td style="display: none;" data-ice="lines">1824</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/ChainTypes.js.html#errorLines=1">lib/chain/src/ChainTypes.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-ChainTypes">ChainTypes</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">3489 byte</td>
+      <td style="display: none;" data-ice="lines">149</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/ChainValidation.js.html#errorLines=9">lib/chain/src/ChainValidation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-chainValidation">chainValidation</a></span></td>
+      <td class="coverage"><span data-ice="coverage">50 %</span><span data-ice="coverageCount" class="coverage-count">1/2</span></td>
+      <td style="display: none;" data-ice="size">4184 byte</td>
+      <td style="display: none;" data-ice="lines">142</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/EmitterInstance.js.html#errorLines=3">lib/chain/src/EmitterInstance.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-emitter">emitter</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">159 byte</td>
+      <td style="display: none;" data-ice="lines">8</td>
+      <td style="display: none;" data-ice="updated">2024-02-05 20:50:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/NumberUtils.js.html">lib/chain/src/NumberUtils.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-NumberUtils">NumberUtils</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">1420 byte</td>
+      <td style="display: none;" data-ice="lines">47</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/ObjectId.js.html#errorLines=10,11,19,40,47,5,51,57,61,7,8,9">lib/chain/src/ObjectId.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/chain/src/ObjectId.js~ObjectId.html">ObjectId</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/12</span></td>
+      <td style="display: none;" data-ice="size">1784 byte</td>
+      <td style="display: none;" data-ice="lines">66</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/TransactionBuilder.js.html#errorLines=10,11,12,133,15,16,17,18,19,197,290,315,32,341,6,689,703,718,735,758,762,766,770,781,793,839,843">lib/chain/src/TransactionBuilder.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/chain/src/TransactionBuilder.js~TransactionBuilder.html">TransactionBuilder</a></span></td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">7/34</span></td>
+      <td style="display: none;" data-ice="size">32517 byte</td>
+      <td style="display: none;" data-ice="lines">852</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/TransactionHelper.js.html#errorLines=1,12,30,43,63,67,88,99">lib/chain/src/TransactionHelper.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-helper">helper</a></span></td>
+      <td class="coverage"><span data-ice="coverage">11 %</span><span data-ice="coverageCount" class="coverage-count">1/9</span></td>
+      <td style="display: none;" data-ice="size">3354 byte</td>
+      <td style="display: none;" data-ice="lines">103</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/chain/src/state.js.html#errorLines=1,7">lib/chain/src/state.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-get">get</a></span>
+<span><a href="function/index.html#static-function-set">set</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
+      <td style="display: none;" data-ice="size">228 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/index.js.html">lib/ecc/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">379 byte</td>
+      <td style="display: none;" data-ice="lines">10</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/BrainKey.js.html#errorLines=1">lib/ecc/src/BrainKey.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-normalize">normalize</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">238 byte</td>
+      <td style="display: none;" data-ice="lines">7</td>
+      <td style="display: none;" data-ice="updated">2024-02-05 20:50:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/KeyUtils.js.html#errorLines=12,14,9">lib/ecc/src/KeyUtils.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-key">key</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">7507 byte</td>
+      <td style="display: none;" data-ice="lines">223</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 13:39:06 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/PrivateKey.js.html#errorLines=10,11,13,155,164,168,177,19,22,70,88,9,95">lib/ecc/src/PrivateKey.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/ecc/src/PrivateKey.js~PrivateKey.html">PrivateKey</a></span></td>
+      <td class="coverage"><span data-ice="coverage">31 %</span><span data-ice="coverageCount" class="coverage-count">6/19</span></td>
+      <td style="display: none;" data-ice="size">5532 byte</td>
+      <td style="display: none;" data-ice="lines">178</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/PublicKey.js.html#errorLines=10,12,122,131,144,15,169,178,18,182,186,22,3,31,40,44,9">lib/ecc/src/PublicKey.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/ecc/src/PublicKey.js~PublicKey.html">PublicKey</a></span></td>
+      <td class="coverage"><span data-ice="coverage">26 %</span><span data-ice="coverageCount" class="coverage-count">6/23</span></td>
+      <td style="display: none;" data-ice="size">5797 byte</td>
+      <td style="display: none;" data-ice="lines">193</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 13:32:18 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/address.js.html#errorLines=11,12,15,21,54,58,6">lib/ecc/src/address.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/ecc/src/address.js~Address.html">Address</a></span></td>
+      <td class="coverage"><span data-ice="coverage">22 %</span><span data-ice="coverageCount" class="coverage-count">2/9</span></td>
+      <td style="display: none;" data-ice="size">2236 byte</td>
+      <td style="display: none;" data-ice="lines">65</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 13:26:16 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/aes.js.html#errorLines=44,7">lib/ecc/src/aes.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/ecc/src/aes.js~Aes.html">Aes</a></span></td>
+      <td class="coverage"><span data-ice="coverage">88 %</span><span data-ice="coverageCount" class="coverage-count">16/18</span></td>
+      <td style="display: none;" data-ice="size">9864 byte</td>
+      <td style="display: none;" data-ice="lines">268</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/ecdsa.js.html#errorLines=10,105,140,64,7">lib/ecc/src/ecdsa.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-calcPubKeyRecoveryParam">calcPubKeyRecoveryParam</a></span>
+<span><a href="function/index.html#static-function-deterministicGenerateK">deterministicGenerateK</a></span>
+<span><a href="function/index.html#static-function-recoverPubKey">recoverPubKey</a></span>
+<span><a href="function/index.html#static-function-sign">sign</a></span>
+<span><a href="function/index.html#static-function-verify">verify</a></span>
+<span><a href="function/index.html#static-function-verifyRaw">verifyRaw</a></span></td>
+      <td class="coverage"><span data-ice="coverage">28 %</span><span data-ice="coverageCount" class="coverage-count">2/7</span></td>
+      <td style="display: none;" data-ice="size">5793 byte</td>
+      <td style="display: none;" data-ice="lines">226</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/ecsignature.js.html#errorLines=103,123,15,36,4,6,77,90">lib/ecc/src/ecsignature.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-ECSignature">ECSignature</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">3511 byte</td>
+      <td style="display: none;" data-ice="lines">130</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/enforce_types.js.html#errorLines=1,39">lib/ecc/src/enforce_types.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-enforce">enforce</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
+      <td style="display: none;" data-ice="size">1066 byte</td>
+      <td style="display: none;" data-ice="lines">43</td>
+      <td style="display: none;" data-ice="updated">2024-02-05 20:50:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/hash.js.html#errorLines=28,32">lib/ecc/src/hash.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-HmacSHA256">HmacSHA256</a></span>
+<span><a href="function/index.html#static-function-ripemd160">ripemd160</a></span>
+<span><a href="function/index.html#static-function-sha1">sha1</a></span>
+<span><a href="function/index.html#static-function-sha256">sha256</a></span>
+<span><a href="function/index.html#static-function-sha512">sha512</a></span></td>
+      <td class="coverage"><span data-ice="coverage">60 %</span><span data-ice="coverageCount" class="coverage-count">3/5</span></td>
+      <td style="display: none;" data-ice="size">1482 byte</td>
+      <td style="display: none;" data-ice="lines">53</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/ecc/src/signature.js.html#errorLines=10,103,11,117,12,13,136,14,146,150,154,160,20,30,39,4,8">lib/ecc/src/signature.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/ecc/src/signature.js~Signature.html">Signature</a></span></td>
+      <td class="coverage"><span data-ice="coverage">19 %</span><span data-ice="coverageCount" class="coverage-count">4/21</span></td>
+      <td style="display: none;" data-ice="size">4745 byte</td>
+      <td style="display: none;" data-ice="lines">167</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/index.js.html#errorLines=34">lib/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">1596 byte</td>
+      <td style="display: none;" data-ice="lines">48</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/index.js.html">lib/serializer/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">324 byte</td>
+      <td style="display: none;" data-ice="lines">8</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/FastParser.js.html#errorLines=2,22,36,4,48,5">lib/serializer/src/FastParser.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/serializer/src/FastParser.js~FastParser.html">FastParser</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
+      <td style="display: none;" data-ice="size">1555 byte</td>
+      <td style="display: none;" data-ice="lines">60</td>
+      <td style="display: none;" data-ice="updated">2024-02-05 20:50:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/SerializerValidation.js.html#errorLines=4,5">lib/serializer/src/SerializerValidation.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-_my">_my</a></span></td>
+      <td class="coverage"><span data-ice="coverage">33 %</span><span data-ice="coverageCount" class="coverage-count">1/3</span></td>
+      <td style="display: none;" data-ice="size">9949 byte</td>
+      <td style="display: none;" data-ice="lines">333</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/convert.js.html#errorLines=2,39,4">lib/serializer/src/convert.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-convert">convert</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">1221 byte</td>
+      <td style="display: none;" data-ice="lines">46</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/error_with_cause.js.html#errorLines=22,25,3,4">lib/serializer/src/error_with_cause.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/serializer/src/error_with_cause.js~ErrorWithCause.html">ErrorWithCause</a></span></td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
+      <td style="display: none;" data-ice="size">1193 byte</td>
+      <td style="display: none;" data-ice="lines">45</td>
+      <td style="display: none;" data-ice="updated">2024-02-05 20:50:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/operations.js.html#errorLines=1001,1009,1017,1021,1027,1035,1043,105,1053,1059,1066,1074,1079,1085,1093,110,1101,1113,1120,1128,1135,1143,1151,1162,1170,1178,118,1186,123,1249,1257,1271,133,141,146,151,159,164,169,174,179,184,189,194,202,210,215,220,225,231,236,241,246,252,257,262,267,275,280,284,292,300,308,313,317,322,326,333,337,344,351,360,368,373,381,386,4,443,448,450,455,457,46,467,477,485,494,501,51,510,520,527,540,548,555,564,576,585,593,600,607,61,612,640,675,686,69,695,703,714,723,730,738,74,745,753,760,768,775,783,785,79,794,807,815,828,84,842,854,864,873,88,883,915,923,932,940,945,953,963,967,97,972,976,982,993">lib/serializer/src/operations.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-account_create">account_create</a></span>
+<span><a href="variable/index.html#static-variable-account_create_operation_fee_parameters">account_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-account_name_eq_lit_predicate">account_name_eq_lit_predicate</a></span>
+<span><a href="variable/index.html#static-variable-account_options">account_options</a></span>
+<span><a href="variable/index.html#static-variable-account_transfer">account_transfer</a></span>
+<span><a href="variable/index.html#static-variable-account_transfer_operation_fee_parameters">account_transfer_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-account_update">account_update</a></span>
+<span><a href="variable/index.html#static-variable-account_update_operation_fee_parameters">account_update_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-account_upgrade">account_upgrade</a></span>
+<span><a href="variable/index.html#static-variable-account_upgrade_operation_fee_parameters">account_upgrade_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-account_whitelist">account_whitelist</a></span>
+<span><a href="variable/index.html#static-variable-account_whitelist_operation_fee_parameters">account_whitelist_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-assert">assert</a></span>
+<span><a href="variable/index.html#static-variable-assert_operation_fee_parameters">assert_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset">asset</a></span>
+<span><a href="variable/index.html#static-variable-asset_claim_fees">asset_claim_fees</a></span>
+<span><a href="variable/index.html#static-variable-asset_claim_fees_operation_fee_parameters">asset_claim_fees_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_claim_pool">asset_claim_pool</a></span>
+<span><a href="variable/index.html#static-variable-asset_claim_pool_operation_fee_parameters">asset_claim_pool_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_create">asset_create</a></span>
+<span><a href="variable/index.html#static-variable-asset_create_operation_fee_parameters">asset_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_fund_fee_pool">asset_fund_fee_pool</a></span>
+<span><a href="variable/index.html#static-variable-asset_fund_fee_pool_operation_fee_parameters">asset_fund_fee_pool_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_global_settle">asset_global_settle</a></span>
+<span><a href="variable/index.html#static-variable-asset_global_settle_operation_fee_parameters">asset_global_settle_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_issue">asset_issue</a></span>
+<span><a href="variable/index.html#static-variable-asset_issue_operation_fee_parameters">asset_issue_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_options">asset_options</a></span>
+<span><a href="variable/index.html#static-variable-asset_publish_feed">asset_publish_feed</a></span>
+<span><a href="variable/index.html#static-variable-asset_publish_feed_operation_fee_parameters">asset_publish_feed_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_reserve">asset_reserve</a></span>
+<span><a href="variable/index.html#static-variable-asset_reserve_operation_fee_parameters">asset_reserve_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_settle">asset_settle</a></span>
+<span><a href="variable/index.html#static-variable-asset_settle_cancel">asset_settle_cancel</a></span>
+<span><a href="variable/index.html#static-variable-asset_settle_cancel_operation_fee_parameters">asset_settle_cancel_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_settle_operation_fee_parameters">asset_settle_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_symbol_eq_lit_predicate">asset_symbol_eq_lit_predicate</a></span>
+<span><a href="variable/index.html#static-variable-asset_update">asset_update</a></span>
+<span><a href="variable/index.html#static-variable-asset_update_bitasset">asset_update_bitasset</a></span>
+<span><a href="variable/index.html#static-variable-asset_update_bitasset_operation_fee_parameters">asset_update_bitasset_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_update_feed_producers">asset_update_feed_producers</a></span>
+<span><a href="variable/index.html#static-variable-asset_update_feed_producers_operation_fee_parameters">asset_update_feed_producers_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_update_issuer">asset_update_issuer</a></span>
+<span><a href="variable/index.html#static-variable-asset_update_issuer_operation_fee_parameters">asset_update_issuer_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-asset_update_operation_fee_parameters">asset_update_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-authority">authority</a></span>
+<span><a href="variable/index.html#static-variable-balance_claim">balance_claim</a></span>
+<span><a href="variable/index.html#static-variable-balance_claim_operation_fee_parameters">balance_claim_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-bid_collateral">bid_collateral</a></span>
+<span><a href="variable/index.html#static-variable-bid_collateral_operation_fee_parameters">bid_collateral_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-bitasset_options">bitasset_options</a></span>
+<span><a href="variable/index.html#static-variable-blind_input">blind_input</a></span>
+<span><a href="variable/index.html#static-variable-blind_output">blind_output</a></span>
+<span><a href="variable/index.html#static-variable-blind_transfer">blind_transfer</a></span>
+<span><a href="variable/index.html#static-variable-blind_transfer_operation_fee_parameters">blind_transfer_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-block_header">block_header</a></span>
+<span><a href="variable/index.html#static-variable-block_id_predicate">block_id_predicate</a></span>
+<span><a href="variable/index.html#static-variable-burn_worker_initializer">burn_worker_initializer</a></span>
+<span><a href="variable/index.html#static-variable-call_order_update">call_order_update</a></span>
+<span><a href="variable/index.html#static-variable-call_order_update_operation_fee_parameters">call_order_update_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-cdd_vesting_policy_initializer">cdd_vesting_policy_initializer</a></span>
+<span><a href="variable/index.html#static-variable-chain_parameters">chain_parameters</a></span>
+<span><a href="variable/index.html#static-variable-committee_member_create">committee_member_create</a></span>
+<span><a href="variable/index.html#static-variable-committee_member_create_operation_fee_parameters">committee_member_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-committee_member_update">committee_member_update</a></span>
+<span><a href="variable/index.html#static-variable-committee_member_update_global_parameters">committee_member_update_global_parameters</a></span>
+<span><a href="variable/index.html#static-variable-committee_member_update_global_parameters_operation_fee_parameters">committee_member_update_global_parameters_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-committee_member_update_operation_fee_parameters">committee_member_update_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-custom">custom</a></span>
+<span><a href="variable/index.html#static-variable-custom_operation_fee_parameters">custom_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-execute_bid">execute_bid</a></span>
+<span><a href="variable/index.html#static-variable-execute_bid_operation_fee_parameters">execute_bid_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-fba_distribute">fba_distribute</a></span>
+<span><a href="variable/index.html#static-variable-fba_distribute_operation_fee_parameters">fba_distribute_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-fee_schedule">fee_schedule</a></span>
+<span><a href="variable/index.html#static-variable-fill_order">fill_order</a></span>
+<span><a href="variable/index.html#static-variable-fill_order_operation_fee_parameters">fill_order_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-htlc_create">htlc_create</a></span>
+<span><a href="variable/index.html#static-variable-htlc_create_operation_fee_parameters">htlc_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-htlc_extend">htlc_extend</a></span>
+<span><a href="variable/index.html#static-variable-htlc_extend_operation_fee_parameters">htlc_extend_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-htlc_redeem">htlc_redeem</a></span>
+<span><a href="variable/index.html#static-variable-htlc_redeem_operation_fee_parameters">htlc_redeem_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-htlc_redeemed">htlc_redeemed</a></span>
+<span><a href="variable/index.html#static-variable-htlc_redeemed_operation_fee_parameters">htlc_redeemed_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-htlc_refund">htlc_refund</a></span>
+<span><a href="variable/index.html#static-variable-htlc_refund_operation_fee_parameters">htlc_refund_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-limit_order_cancel">limit_order_cancel</a></span>
+<span><a href="variable/index.html#static-variable-limit_order_cancel_operation_fee_parameters">limit_order_cancel_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-limit_order_create">limit_order_create</a></span>
+<span><a href="variable/index.html#static-variable-limit_order_create_operation_fee_parameters">limit_order_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-linear_vesting_policy_initializer">linear_vesting_policy_initializer</a></span>
+<span><a href="variable/index.html#static-variable-memo_data">memo_data</a></span>
+<span><a href="variable/index.html#static-variable-op_wrapper">op_wrapper</a></span>
+<span><a href="variable/index.html#static-variable-operation">operation</a></span>
+<span><a href="variable/index.html#static-variable-override_transfer">override_transfer</a></span>
+<span><a href="variable/index.html#static-variable-override_transfer_operation_fee_parameters">override_transfer_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-price">price</a></span>
+<span><a href="variable/index.html#static-variable-price_feed">price_feed</a></span>
+<span><a href="variable/index.html#static-variable-processed_transaction">processed_transaction</a></span>
+<span><a href="variable/index.html#static-variable-proposal_create">proposal_create</a></span>
+<span><a href="variable/index.html#static-variable-proposal_create_operation_fee_parameters">proposal_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-proposal_delete">proposal_delete</a></span>
+<span><a href="variable/index.html#static-variable-proposal_delete_operation_fee_parameters">proposal_delete_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-proposal_update">proposal_update</a></span>
+<span><a href="variable/index.html#static-variable-proposal_update_operation_fee_parameters">proposal_update_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-refund_worker_initializer">refund_worker_initializer</a></span>
+<span><a href="variable/index.html#static-variable-signed_block">signed_block</a></span>
+<span><a href="variable/index.html#static-variable-signed_block_header">signed_block_header</a></span>
+<span><a href="variable/index.html#static-variable-signed_transaction">signed_transaction</a></span>
+<span><a href="variable/index.html#static-variable-stealth_confirmation">stealth_confirmation</a></span>
+<span><a href="variable/index.html#static-variable-stealth_memo_data">stealth_memo_data</a></span>
+<span><a href="variable/index.html#static-variable-transaction">transaction</a></span>
+<span><a href="variable/index.html#static-variable-transfer">transfer</a></span>
+<span><a href="variable/index.html#static-variable-transfer_from_blind">transfer_from_blind</a></span>
+<span><a href="variable/index.html#static-variable-transfer_from_blind_operation_fee_parameters">transfer_from_blind_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-transfer_operation_fee_parameters">transfer_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-transfer_to_blind">transfer_to_blind</a></span>
+<span><a href="variable/index.html#static-variable-transfer_to_blind_operation_fee_parameters">transfer_to_blind_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-vesting_balance_create">vesting_balance_create</a></span>
+<span><a href="variable/index.html#static-variable-vesting_balance_create_operation_fee_parameters">vesting_balance_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-vesting_balance_withdraw">vesting_balance_withdraw</a></span>
+<span><a href="variable/index.html#static-variable-vesting_balance_withdraw_operation_fee_parameters">vesting_balance_withdraw_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-vesting_balance_worker_initializer">vesting_balance_worker_initializer</a></span>
+<span><a href="variable/index.html#static-variable-void_result">void_result</a></span>
+<span><a href="variable/index.html#static-variable-withdraw_permission_claim">withdraw_permission_claim</a></span>
+<span><a href="variable/index.html#static-variable-withdraw_permission_claim_operation_fee_parameters">withdraw_permission_claim_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-withdraw_permission_create">withdraw_permission_create</a></span>
+<span><a href="variable/index.html#static-variable-withdraw_permission_create_operation_fee_parameters">withdraw_permission_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-withdraw_permission_delete">withdraw_permission_delete</a></span>
+<span><a href="variable/index.html#static-variable-withdraw_permission_delete_operation_fee_parameters">withdraw_permission_delete_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-withdraw_permission_update">withdraw_permission_update</a></span>
+<span><a href="variable/index.html#static-variable-withdraw_permission_update_operation_fee_parameters">withdraw_permission_update_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-witness_create">witness_create</a></span>
+<span><a href="variable/index.html#static-variable-witness_create_operation_fee_parameters">witness_create_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-witness_update">witness_update</a></span>
+<span><a href="variable/index.html#static-variable-witness_update_operation_fee_parameters">witness_update_operation_fee_parameters</a></span>
+<span><a href="variable/index.html#static-variable-worker_create">worker_create</a></span>
+<span><a href="variable/index.html#static-variable-worker_create_operation_fee_parameters">worker_create_operation_fee_parameters</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/146</span></td>
+      <td style="display: none;" data-ice="size">36780 byte</td>
+      <td style="display: none;" data-ice="lines">1285</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:58:56 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/precision.js.html#errorLines=7">lib/serializer/src/precision.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">3263 byte</td>
+      <td style="display: none;" data-ice="lines">102</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/serializer.js.html#errorLines=10,11,16,184,189,197,203,212,3,5,59,7,8,89,9">lib/serializer/src/serializer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/lib/serializer/src/serializer.js~Serializer.html">Serializer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">11 %</span><span data-ice="coverageCount" class="coverage-count">2/17</span></td>
+      <td style="display: none;" data-ice="size">6984 byte</td>
+      <td style="display: none;" data-ice="lines">217</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/template.js.html">lib/serializer/src/template.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-template">template</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">450 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2024-02-05 20:50:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/lib/serializer/src/types.js.html#errorLines=1014,1015,1016,13,15,17,210,290,385,471,528,575,661,707,811,85,855,86">lib/serializer/src/types.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-Types">Types</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/18</span></td>
+      <td style="display: none;" data-ice="size">32186 byte</td>
+      <td style="display: none;" data-ice="lines">1033</td>
+      <td style="display: none;" data-ice="updated">2024-03-06 12:30:05 (UTC)</td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
